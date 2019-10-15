@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rateMyDay</title>
+	<link rel="stylesheet" type="text/css" href="rateMyDay.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	
+</head>
+<body>
+<!--smiles att trycka på  -->
+<div class="container">
+	<div class="emojis row">
+		<!-- <i id="emojiBoxHappy" class="far fa-laugh col-lg-3"></i> -->
+		<!-- <i class="puh">&#128512;</i> -->
+		<div class="col-lg-2"></div>
+		<p id="emojiBoxHappy" class="emo col-lg-2">&#128512;</p>
+		<p id="emojiBoxOk" class="emo col-lg-2">&#128578;</p>
+		<p id="emojiBoxMeh" class="emo col-lg-2">&#128528;</p>
+		<p id="emojiBoxSad" class="emo col-lg-2">&#128577;</p>
+		<div class="col-lg-2"></div>
+
+<!-- 		<i id="emojiBoxOk"class="far fa-smile col-lg-3" ></i>
+		<i id="emojiBoxMeh" class="far fa-meh col-lg-3"></i>
+		<i id="emojiBoxSad" class="far fa-frown col-lg-3"></i> -->
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<h3 class="resultat">Resultat</h3>
+			<ul></ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class=col-lg-2>
+			<button id="pieChartButton">Update pie chart</button>
+		</div>
+		<div class=col-lg-10>
+			<canvas id="pieChart"></canvas>
+		</div>
+		
+	</div>
+<!-- 	<div class="row">
+		<button id="lineChartButton">show line chart</button>
+		<canvas id="lineChart" width="800" height="450"></canvas>
+	</div> -->
+</div>
+	
+<!--lista där resultaten kommer, ska sen ersättas av en databas-->
+<!--bakgrunden ska vara olika beroende på emoji -->
+
+<!--statistiskt graf på något sätt. typ en cirkel-->
+<!-- -->
+<script type="text/javascript" src="rateMyDay.js"></script>
+</body>
+
+</html>
